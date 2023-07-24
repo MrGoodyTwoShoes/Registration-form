@@ -1,0 +1,123 @@
+/* Custom background */
+body {
+    background-image: url("Black\ Network.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  /* ... (Rest of the CSS code remains the same) ... */
+
+/* Form container styling */
+form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(10, 10, 10, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1{
+    color: #ee72d9;
+  }
+
+/* Header styling */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #bdbaba;
+}
+
+p{
+  color: #bdbaba;
+}
+
+/* Label and input field styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none; /* Remove black outline on input fields */
+}
+
+/* "Remember me" text styling */
+.remember-me-text {
+    color: white; /* Change text color to white */
+    font-size: 16px; /* Change font size to 16px */
+  }
+  
+
+/* "Remember me" toggle button */
+.toggle-btn {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-color: #b3b0b0;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .toggle-btn::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+
+/* Adjust the background color of the toggle button when it's "on" */
+.toggle-btn.on {
+    background-color: #4CAF50;
+  }
+  
+  /* Move the "on" state position of the toggle button */
+  .toggle-btn.on::before {
+    transform: translateX(30px);
+  }
+
+/* Submit button styling */
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ee72d9; /* Green button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: #4CAF50 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /* Darker green when hovered over */
+}
+
+/* Change cursor to execution mode */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+.toggle-btn,
+input[type="submit"] {
+  cursor: pointer;
+}

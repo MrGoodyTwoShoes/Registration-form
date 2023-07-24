@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Success</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<style>
+  /* Custom CSS for animation */
+  .success-message {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-in-out forwards;
+  }
+
+  @keyframes fadeInUp {
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  .error-message {
+            animation: shake 0.5s ease-in-out infinite;
+        }
+
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            25%, 75% {
+                transform: translateX(-5px);
+            }
+            50% {
+                transform: translateX(5px);
+            }
+        }
+</style>
+<body>
+  <h1>Welcome to Our Website</h1>
+  <div class="success-message">
+    <h2>Registration Successful!</h2>
+    <p>Thank you for registering. Your account has been successfully created.</p>
+  </div>
+</body>
+</html>
